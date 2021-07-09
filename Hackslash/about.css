@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+#about{
+    display: flex;
+    justify-content: center;
+    background: radial-gradient(80.11% 80.11% at 50% 19.89%, #F3F5F9 0%, rgba(243, 245, 249, 0.5) 100%), #FFFFFF;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 3px; */
+    font-family: "Montserrat";
+    height: 250px;
+    width: 326px;
+}
+.about-me img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px 2px rgb(224 219 219), -1px -1px 3px white;
+    height: 60px;
+    width: 60px;
+}
+.aboutme-text{
+    height: 60%;
+    padding: 5px 0px;
+    width: 70%;
+}
+.about-me .aboutme-text h3{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.about-me .aboutme-text p{
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 300;
+    color: rgb(39, 38, 38);
+}
+@media (max-width: 768px){
+    .aboutme-text{
+        width: 90%;
+    }
+    .about-me .aboutme-text p{
+        font-size: 1rem;
+    }
+}

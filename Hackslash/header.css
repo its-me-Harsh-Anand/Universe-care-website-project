@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+#header, #business-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    padding: 3px;
+    text-align: center;
+}
+#header a, #business-name a{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 0.7em;
+    text-decoration: none;   
+    color: rgba(0, 71, 171, 1);
+}
+.info-item{
+    display: flex;
+    align-items: center;
+}
+#business-name{
+    background: linear-gradient(208.56deg, #FFC03D -29.1%, #FFC107 64.78%);
+}

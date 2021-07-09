@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+#gallery{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+}
+#image{
+    display: flex;
+    outline: none;
+    height: 250px;    
+    overflow: hidden;
+}
+#image img{
+    height: 100%;
+}
+#image img.lappiimg{
+    width: 100%;
+}
+#image img.phoneimg{
+    display: none;
+    width: 20%;
+}
+#gallery2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    background-color:rgba(57, 95, 169, 1);
+}
+.text-and-button{
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 250px;
+    padding: 0px 69px;
+    color: white;
+}
+.appointment-btn{
+    margin-top: -14%;
+    font-family: "Montserrat";
+    font-weight: 700;
+    border: 0px;
+    background-color: white;
+    color: rgba(57, 95, 169, 1);
+    border-radius: 2px;
+    padding: 12px 15px;
+    cursor: pointer;
+    outline: none;
+}
+.care-heart-img{
+    height: 250px;
+    width: 250px;
+}
+.care-heart-img img{
+    height: 100%;
+    width: 100%;
+}
+#gallery .top-arrow{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 10px;
+    bottom: 0px;
+    background-color: white;
+    box-shadow: 1px 1px 1px black;
+    z-index: 2;
+}
+#gallery .top-arrow a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 900;
+    font-family: 'Montserrat';
+}
+@media (max-width: 768px) {
+    #image{
+        width: 150%;
+        offset-block-end: 0;
+    }
+    #image img.lappiimg{
+        width: 150%;
+    }
+    #image img.phoneimg{
+        display: flex;
+        width: 80%;
+        margin-right: 10px;
+    }
+    #gallery2{
+        flex-direction: column;
+    }
+    .text-and-button{
+        width: 90%;
+        padding: auto;
+    }
+    .appointment-btn{
+        font-size: 1rem;
+        text-align: center;
+        margin: -13px auto;
+    }
+
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+#resources{
+    height: 90vh;
+    margin: 30px 0px;
+}
+#resources h3{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 17px;
+}
+#resources p{
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-size: 14px;
+}
+#upper, #lower{
+    display: flex;
+    height: 48%;
+    justify-content: center;
+    margin-bottom: 13px;
+}
+#upper .upper-box, #lower .upper-box, #middle .middle-box{
+    position: relative;
+    width: 227px;
+    border-left: 1px solid rgb(221, 221, 221);
+    padding: 10px 10px;
+    
+}
+#upper .upper-box:nth-child(1){
+    border-left: 0px;
+}
+#upper .info-box{
+    width: 477px;
+}
+#upper .info-box h3{
+    font-size: 1.7rem;
+}
+#upper .info-box p{
+    margin-top: 50px;
+}
+#upper .upper-box img, #lower .upper-box img, #middle .middle-box img{
+    width: 151px;
+    height: 120px;
+}
+#lower .contact-box img{
+    height: 80px;
+    width: 80px;
+    margin: 10px 28%;
+}
+#upper .upper-box .arrow, #lower .upper-box .arrow, #middle .middle-box .arrow{
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px #9a958c;
+    padding: 12px 15px;
+    position: absolute;
+    bottom: 17px;
+    right: 10px;
+}
+#middle .middle-box .arrow{
+    bottom: 10px;
+}
+#middle{
+    display: none;
+}
+#resources a{
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+    text-decoration: none;
+    font-weight: 700;
+}
+#resources .contact-box button{
+    background-color: rgba(0, 71, 171, 1);
+    color: white;
+    padding: 13px 23px;
+    margin-top: 37px;
+    border: 0px;
+    outline: none;
+}
+@media (max-width: 768px) {
+    #resources{
+        height: 120vh;
+    }
+    #upper .resource-box, #lower .resource-box{
+        display: none;
+    }
+    #upper .upper-box, #lower .upper-box, #middle .middle-box:nth-child(1){
+        border-left: 0px;
+    }
+    #middle,#upper, #lower{
+        display: flex;
+        height: 31%;
+    }
+    #middle{
+        height: 35%;
+    }
+    #middle{
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+    }
+    #middle > div{
+        flex-shrink: 0;
+    }
+    #resources .contact-box button{
+        margin-top: 38px;
+    }
+    #upper .info-box h3{
+        font-size: 22px;
+    }
+}

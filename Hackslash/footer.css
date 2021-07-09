@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.footer-div{
+    display: flex;
+}
+#headquarter{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#service-and-company{
+    
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+#signup-and-logo{
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+.footer-img img{
+    height: 51px;
+    width: 51px;
+    margin-top: 5px;
+}
+.footer-follow {
+    align-items: center;
+    display: flex;
+}
+.footer-follow h3{
+    font-size: 16px;
+}
+#footer input{
+    display: block;
+    margin: 10px 0px;
+    padding: 2px 3px;
+    border: 1px solid rgba(207, 208, 215, 1);
+    border-radius: 2px;
+    outline: none;
+}
+#footer a{
+    text-decoration: none;
+    color: rgba(43, 45, 66, 1);
+    font-family: "Montserrat";
+}
+#footer h3{
+    font-family: "Montserrat";
+    color:rgba(255, 132, 0, 1);
+}
+#footer button{
+    align-self: flex-end;
+    padding: 5px 14px;
+    border: none;
+    outline: none;
+    background-color: rgba(57, 95, 169, 1);
+    color: white;
+}
+#copyright-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat','Times New Roman', Times, serif;
+    font-size: 10px;
+}
+#copyright-footer div h3{
+    display: inline-block;
+    color: rgba(255, 132, 0, 1);
+}
+@media (max-width: 768px) {
+    .footer-div{
+        flex-direction: column;
+    }
+    .footer-div:nth-child(2n+1){
+        margin: 0px auto;
+    }
+    #headquarter, #service-and-company, #signup-and-logo{
+        width: 97%;
+        padding: 20px 0px;
+    }
+    
+    .logo-and-follow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+}

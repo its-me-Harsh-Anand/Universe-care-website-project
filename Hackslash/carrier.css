@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+#carrier{
+    height: 75vh;
+    /* border: 1px solid red; */
+    
+}
+.carrier-parent{
+    display: flex;
+    /* border: 1px solid green; */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.carrier-child{
+    /* border: 1px solid blue; */
+    width: 80%;
+    height: 100%;
+}
+.text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 69px;
+    background: linear-gradient(rgba(255, 255, 255, 1) 31%, rgba(255, 241, 225, 1) 90%);
+    background-blend-mode:lighten;
+}
+.main-text{
+    /* border: 1px solid yellow; */
+    font-size: 2rem;
+    font-family: 'Montserrat', 'sans-serif';  
+    font-weight: 700;  
+}
+.sub-text{
+    margin-top: 10px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-weight: 100;
+}
+.appointment-button{
+    border: 0px;
+    background-color: rgba(0, 71, 171, 1);
+    padding: 12px 15px;
+    color: white;
+    border-radius: 2px;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+}
+.img{
+    display: flex;
+    height: 100%;
+    border-top-left-radius: 116px;
+    background: url("../img/aging_capitalism.jpg") no-repeat center/cover;
+}
+
+@media screen and (max-width: 768px){
+    .carrier-parent{
+        flex-direction: column-reverse;
+    }
+    .carrier-child{
+        width: 100%;
+    }
+    .img{
+        border-top-left-radius: 0px;
+    }
+    .text{
+        margin: 0px;
+        margin-top: 10px;
+        padding: 0px;
+        
+    }
+    .main-text{
+        padding: 0px 10px;
+        font-size: 1.5em;
+    }
+    .sub-text{
+        padding: 0px 10px;
+    }
+    .appointment-button{
+        margin: auto;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+}

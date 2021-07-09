@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+#home-care-heroes {
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(
+    95.15deg,
+    #fff1e1 0%,
+    #fffbf7 87.89%,
+    #ffffff 99.36%
+  );
+}
+.heroes-grandParent {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 95vw;
+}
+.heroes-parent {
+  display: flex;
+  background: linear-gradient(
+    95.15deg,
+    #fff4e7 0%,
+    #fffbf7 87.89%,
+    #ffffff 99.36%
+  );
+  overflow-x: auto;
+}
+.heroes-child {
+  border-radius: 2px;
+  margin: 10px;
+  height: 200px;
+  width: 305px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  flex-shrink: 0;
+}
+.star-mark {
+  color: rgba(255, 193, 7, 1);
+}
+#home-care-heroes h3 {
+  font-family: "Montserrat", "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+#home-care-heroes .review-box {
+  font-family: "Montserrat", "Times New Roman", Times, serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+.all-reviews a {
+  position: absolute;
+  left: 25%;
+  margin-top: 10px;
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.overall-rating {
+  padding-left: 10px;
+}
+.overall-rating .grand-review {
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  #home-care-heores {
+    margin-bottom: 50px;
+  }
+  .heroes-grandParent {
+    flex-direction: column;
+    width: 95vw;
+  }
+  .heroes-parent {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .heroes-parent > div {
+    flex-shrink: 0;
+    width: 305px;
+    height: 200px;
+  }
+}
