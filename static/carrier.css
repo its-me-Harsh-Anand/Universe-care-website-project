@@ -3,6 +3,11 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+  }
 #carrier{
     height: 75vh;
     /* border: 1px solid red; */
@@ -55,7 +60,7 @@
     display: flex;
     height: 100%;
     border-top-left-radius: 116px;
-    background: url("../img/aging_capitalism.jpg") no-repeat center/cover;
+    background: url("../static/img/aging_capitalism.jpg") no-repeat center/cover;
 }
 
 @media screen and (max-width: 768px){
