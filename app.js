@@ -7,7 +7,7 @@ const alert = require("alert")
 
 const mongoose = require("mongoose")
 mongoose.connect(
-  "mongodb+srv://harsh:#Harsh787@cluster0.adqls.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "mongodb+srv://harshview:@Harsh1379@cluster0.adqls.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
@@ -43,7 +43,7 @@ app.get("*", (req, res) => {
   const params = { title: "404 error" }
   res.status(200).render("index.pug", params)
 })
-app.post("/", (req, res) => {
+app.post("/" || "/#footer", (req, res) => {
   var myData = new Contact(req.body)
   myData
     .save()
@@ -54,7 +54,7 @@ app.post("/", (req, res) => {
     .catch(() => {
       // alert("Oops! Something went wrong. Please try again.")
       // console.log("not saved")
-      res.status(400).render("index.pug")
+      res.status(404).render("Oops! Something went wrong")
     })
 })
 
