@@ -6,11 +6,13 @@ const bodyparser = require("body-parser")
 const alert = require("alert")
 
 const mongoose = require("mongoose")
-// mongoose.connect("mongodb+srv://harshview:@Harsh1379@cluster0.rp6dt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
-mongoose.connect("mongodb://localhost/DanceContact", {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-})
+mongoose.connect(
+  "mongodb+srv://harsh:#Harsh787@cluster0.adqls.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+)
 
 const db = mongoose.connection
 db.on("error", console.error.bind(console, "connection error:"))
