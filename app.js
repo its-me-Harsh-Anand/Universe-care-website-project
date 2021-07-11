@@ -54,7 +54,7 @@ app.post("/" || "/#footer", (req, res) => {
     .catch(() => {
       // alert("Oops! Something went wrong. Please try again.")
       // console.log("not saved")
-      res.status(404).render("Oops! Something went wrong")
+      res.status(404).render("index.pug")
     })
 })
 
