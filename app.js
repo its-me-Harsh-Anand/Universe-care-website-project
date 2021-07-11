@@ -53,6 +53,7 @@ app.post("/", (req, res) => {
     })
     .catch(() => {
       alert("Oops! Something went wrong. Please try again.")
+      console.log("not saved")
       res.status(400).render("index.pug")
     })
 })
