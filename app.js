@@ -48,12 +48,12 @@ app.post("/", (req, res) => {
   myData
     .save()
     .then(() => {
-      alert("Thanks for joining us. Stay safe, stay Healthy")
+      // alert("Thanks for joining us. Stay safe, stay Healthy")
       res.render("index.pug")
     })
     .catch(() => {
-      alert("Oops! Something went wrong. Please try again.")
-      console.log("not saved")
+      // alert("Oops! Something went wrong. Please try again.")
+      // console.log("not saved")
       res.status(400).render("index.pug")
     })
 })
