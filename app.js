@@ -6,13 +6,11 @@ const bodyparser = require("body-parser")
 const alert = require("alert")
 
 const mongoose = require("mongoose")
-mongoose.connect(
-  "mongodb+srv://harshview:@Harsh1379@cluster0.adqls.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-)
+// mongoose.connect("mongodb+srv://harshview:<password>@cluster0.rp6dt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect("mongodb+srv://harshview:@Harsh1379@cluster0.rp6dt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
 
 const db = mongoose.connection
 db.on("error", console.error.bind(console, "connection error:"))
@@ -40,21 +38,19 @@ app.get("/", (req, res) => {
 })
 
 app.get("*", (req, res) => {
-  const params = { title: "404 error" }
-  res.status(200).render("index.pug", params)
+  res.status(200).render("index.pug")
 })
-app.post("/" || "/#footer", (req, res) => {
+app.post("/", (req, res) => {
   var myData = new Contact(req.body)
   myData
     .save()
     .then(() => {
-      // alert("Thanks for joining us. Stay safe, stay Healthy")
+      alert("Thanks for joining us. Stay safe, stay Healthy")
       res.render("index.pug")
     })
     .catch(() => {
-      // alert("Oops! Something went wrong. Please try again.")
-      // console.log("not saved")
-      res.status(404).render("index.pug")
+      alert("Oops! Something went wrong. Please try again.")
+      res.status(400).render("index.pug")
     })
 })
 
