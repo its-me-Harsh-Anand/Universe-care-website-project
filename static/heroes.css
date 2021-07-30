@@ -28,13 +28,15 @@
     #fffbf7 87.89%,
     #ffffff 99.36%
   );
-  overflow-x: auto;
+  overflow-x: hidden;
+  position: relative;
+  
 }
 .heroes-child {
   border-radius: 2px;
   margin: 10px;
   height: 200px;
-  width: 305px;
+  width: 300px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -80,9 +82,38 @@
   .heroes-parent {
     display: flex;
     width: 100%;
-    overflow-x: auto;
+    overflow: auto;
+    position: relative;
+    left: 0;
     -webkit-overflow-scrolling: touch;
+    animation: scroll 3s infinite;
   }
+  /* @keyframes scroll {
+    0%{
+      left: 5%;
+    }
+    25%{
+      left: 5%;
+    }
+    30%{
+      left: -90%;
+    }
+    55%{
+      left: -90%;
+    }
+    60%{
+      left: -180%;
+    }
+    85%{
+      left: -180%;
+    }
+    90%{
+      left: -270%;
+    }
+    100%{
+      left: -270%;
+    }
+  } */
   .heroes-parent > div {
     flex-shrink: 0;
     width: 305px;

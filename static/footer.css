@@ -1,32 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 .footer-div{
     display: flex;
+    justify-content: space-between;
 }
 #headquarter{
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 24%;
 }
 #service-and-company{
     
     display: flex;
     width: 30%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 #signup-and-logo{
     display: flex;
-    width: 30%;
+    max-width: 30%;
     flex-direction: column;
     justify-content: space-around;
     
 }
 .footer-img img{
     height: 51px;
-    width: 51px;
-    margin-top: 5px;
+    margin-top: 13px;
 }
 .footer-follow {
     align-items: center;
+    max-width: 218px;
+    justify-content: space-between;
     display: flex;
 }
 .footer-follow h3{
@@ -35,7 +37,8 @@
 #footer input{
     display: block;
     margin: 10px 0px;
-    padding: 2px 3px;
+    width: 226px;
+    padding: 6px 6px;
     border: 1px solid rgba(207, 208, 215, 1);
     border-radius: 2px;
     outline: none;
@@ -68,9 +71,15 @@
     display: inline-block;
     color: rgba(255, 132, 0, 1);
 }
+form{
+    display: flex;
+    flex-direction: column;
+    max-width: 241px;
+}
 @media (max-width: 768px) {
     .footer-div{
         flex-direction: column;
+        align-items: center;
     }
     .footer-div:nth-child(2n+1){
         margin: 0px auto;
@@ -78,6 +87,9 @@
     #headquarter, #service-and-company, #signup-and-logo{
         width: 97%;
         padding: 20px 0px;
+    }
+    #signup-and-logo{
+        max-width: 97%;
     }
     
     .logo-and-follow{

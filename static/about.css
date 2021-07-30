@@ -50,4 +50,7 @@
     .about-me .aboutme-text p{
         font-size: 1rem;
     }
+    #about{
+        margin-top: -120px;
+    }
 }
